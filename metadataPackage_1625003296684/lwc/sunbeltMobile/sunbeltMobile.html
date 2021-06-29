@@ -1,0 +1,52 @@
+<template>
+	<lightning-card class="canvas" title="Worksheet">
+
+		<div class="slds-p-around_medium lgc-bg">
+			<lightning-tile class="actionTile" label="Customer Information" type="media"
+				href="/flow/Customer_LookUp_Flow">
+				<lightning-icon slot="media" icon-name="standard:customers"></lightning-icon>
+				<p class="slds-truncate" title="adsf">Add Customer (required)</p>
+			</lightning-tile>
+		</div>
+		<div class="slds-p-around_medium lgc-bg">
+			<lightning-tile class="actionTile" label="Rental Method" type="media">
+				<lightning-icon slot="media" icon-name="standard:work_step"></lightning-icon>
+				<p class="slds-truncate" title="adsf">Add rental method and duration</p>
+			</lightning-tile>
+		</div>
+		<div class="slds-p-around_medium lgc-bg">
+			<lightning-tile class="actionTile" label="Equipment" type="media"
+				href="/flow/X1_Equipment_Search?retURL=https://sunbeltrentalsmulticloud.lightning.force.com/lightning/n/Sunbelt">
+				<lightning-icon slot="media" icon-name="standard:fulfillment_order"></lightning-icon>
+				<p class="slds-truncate" title="asdf">Add equipment (required)</p>
+			</lightning-tile>
+		</div>
+		<div class="slds-p-around_medium lgc-bg">
+			<lightning-tile class="actionTile" label="Fulfillment Branch" type="media">
+				<lightning-icon slot="media" icon-name="standard:quip_sheet"></lightning-icon>
+				<p class="slds-truncate" title="asdf">PC12345, A 30 Sunbelt PC Name, Long City Name, NY 00000</p>
+			</lightning-tile>
+		</div>
+		<div class="slds-p-around_medium lgc-bg">
+			<lightning-tile class="actionTile" label="Rental Instructions" type="media">
+				<lightning-icon slot="media" icon-name="standard:location"></lightning-icon>
+				<p class="slds-truncate" title="asdf">Add Rental Instructions (optional)</p>
+			</lightning-tile>
+		</div>
+		<div class="slds-p-around_medium lgc-bg">
+			<lightning-tile class="footerTile" label="Estimated Total:  $3,427">
+				<p class="slds-truncate" title="Total"></p>
+				<br>
+				<div class="slds-align_absolute-center" style="height:5rem">
+					<lightning-button variant="success" label="Submit" title="Primary action" onclick={handleClick}
+						class="slds-m-left_x-small"></lightning-button>
+				</div>
+			</lightning-tile>
+		</div>
+
+
+
+		<h2>Copyright Sunbelt Rentals 2021</h2>
+
+	</lightning-card>
+</template>
